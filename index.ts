@@ -24,8 +24,8 @@ mongoose.connect(uri) // conexion a la base de datos
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:3000","https://pgschool.herokuapp.com"],
-  // origin: "https://pgschool.herokuapp.com",
+  // origin: "http://localhost:3000",
+  origin: ["https://pgschool.herokuapp.com","http://localhost:3000"],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
