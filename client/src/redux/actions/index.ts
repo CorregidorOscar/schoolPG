@@ -22,6 +22,7 @@ export const GET_SUBJECTS = "GET_SUBJECTS"
 
 export const getUserByLogin =
   (payload: ICredential) => async (dispatch: Dispatch) => {
+    console.log('puerto',PORT);
     const r = await instance.post("/login", payload);
     dispatch({
       type: GET_USER_LOGGED,
