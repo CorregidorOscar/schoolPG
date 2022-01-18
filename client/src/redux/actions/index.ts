@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5000; // Step 1
 
 const instance = axios.create({
   withCredentials: true,
-  baseURL: `http://localhost:${PORT}/api`,
-  // baseURL: '/api'
+  // baseURL: `http://localhost:${PORT}/api`,
+  baseURL: '/api'
 });
 
 export const GET_USER_LOGGED = "GET_USER_LOGGED";
